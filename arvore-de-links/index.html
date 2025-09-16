@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- div é uma caixa genérica que não tem estilos que o browser aplique nela -->
+    <div id="container">
+      <div id="profile">
+        <img
+          src="./assets/assets/Avatarandressa.png"
+          alt="Foto de Mayk Brito sorrindo, usando óculos e camisa preta, barbara e fundo amarelo"
+        />
+        <p>@andressamourao</p>
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+      <!-- alt = alternativa. ponto 1: caso não ache a imagem, 2: pessoas com deficiência, 3: caso não haja interpretação da imagem, como você descreveria a imagem? -->
+      <ul>
+        <li>
+          <a href="#">Meu site</a>
+        </li>
+
+        <li>
+          <a href="#">Ver meu portfólio</a>
+        </li>
+
+        <li>
+          <a href="#">Uma playlist pra você</a>
+        </li>
+
+        <li>
+          <a href="https://rocketseat.com.br/explorer" target="_blank"
+            >Meu hobby favorito</a
+          >
+        </li>
+      </ul>
+      <div id="social-links">
+        <a href="https://linkedin.com/in/andressamourao" target="_blank"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+      </div>
+      <footer>
+        Feito com ♥ no curso da
+        <a href="https://rocketseat.com.br" target="_blanket">Rocketseat</a>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
