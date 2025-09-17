@@ -5,19 +5,20 @@
 }
 
 :root {
-  --text-color: white;
-  /*--bg-url: url(./assets/assets/bg-mobile.jpg);*/
-  --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgba(255, 255, 255, 0.1);
+  /* light mode padrão */
+  --text-color: #1f1f1f;
+  --bg-color: #fefdec;
+  --stroke-color: rgba(30, 30, 30, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.5);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/assets/moon-stars.svg);
 }
 
-.light {
-  --text-color: black;
-   /*--bg-url: url(./assets/assets/bg-mobile-light.jpg);*/
-  --stroke-color: rgba(0, 0, 0, 0.5);
+.dark {
+  --text-color: #f1f1f1;
+  --bg-color: #1a1a1a;
+  --stroke-color: rgba(223, 223, 223, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
@@ -106,7 +107,7 @@ body * {
   animation: slide-out 0.3s;
 }
 
-.light #switch button {
+.dark #switch button {
   animation: slide-in 0.3s forwards;
 }
 
@@ -225,8 +226,9 @@ footer {
     height: 100vh;
     top: 0;
     left: 0;
-    background: #fefdec;
+    background: var(--bg-color);
     overflow: hidden;
+     transition: background-color 0.3s ease;
 }
 
 .background span {
