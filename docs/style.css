@@ -11,7 +11,7 @@
   --stroke-color: rgba(30, 30, 30, 0.5);
   --surface-color: rgba(255, 255, 255, 0.5);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
-  --highlight-color: rgba(255, 255, 255, 0.2);
+  --highlight-color: rgba(0, 0, 0, 0.2);
   --switch-bg-url: url(./assets/assets/moon-stars.svg);
 }
 
@@ -181,7 +181,7 @@ ul li a:hover {
   text-decoration: none;
 
   padding: 16px;
-  transition: background 0.2s;
+  transition: background-color 0.2s;
   border-radius: 50px;
 }
 
