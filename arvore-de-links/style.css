@@ -99,6 +99,10 @@ body * {
   animation: slide-in 0.3s forwards;
 }
 
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+
 #switch span {
   display: block;
 
@@ -162,10 +166,16 @@ ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 
   padding: 16px;
   transition: background 0.2s;
-  border-radius: 50%;
+  border-radius: 50px;
+}
+
+#social-links a i {
+  width: 24px;
+  height: 24px;
 }
 
 #social-links a:hover {
