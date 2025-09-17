@@ -93,6 +93,8 @@ body * {
   transform: translateY(-50%);
 
   animation: slide-out 0.3s;
+
+  animation: slide-out 0.3s;
 }
 
 .light #switch button {
@@ -201,6 +203,25 @@ footer {
   }
 }
 
+/* animations */
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
 /* animations */
 
 @keyframes slide-in {
